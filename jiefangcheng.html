@@ -1,0 +1,37 @@
+<script>
+    var a = prompt('a:')
+    var b = prompt('b:')
+    var c = prompt('c:')
+    var d = prompt('d:')
+    var e = prompt('e:')
+    var f = prompt('f:')
+var  delta=b*b-4*a*c;
+var x1=(-b+Math.sqrt(delta))/(2*a);
+var x2=(-b-Math.sqrt(delta))/(2*a);
+var x3=(-b)/(2*a);
+
+if(delta>0){
+    alert (x1);
+    alert (x2);
+}else if(delta==0){
+    alert (x3);
+}else{
+    alert ((-b)/(2*a)+" + "+(Math.sqrt(-delta))/(2*a)+'i')
+    alert ((-b)/(2*a)+" + "+(Math.sqrt(-delta))/(2*a)+'i')
+}
+
+var y1=(b*f-e*c)/(b*d-e*a);
+var y2=(c*d-f*a)/(b*d-e*a);
+var x=y1;
+var y=y2;
+if(a/d != b/e){
+    alert (x)
+    alert (y)
+}else if(b*d==e*a && c*d==f*a){
+    alert ("有无数解");
+}else if(b*d==e*a && c*d==f*a){
+    alert  ("无解");
+    }
+
+debugger
+</script>
